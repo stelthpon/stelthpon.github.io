@@ -13,9 +13,9 @@
 
 class Queue :
         array = []
-        def push(self, e) :
+        def enque(self, e) :
             self.array.append(e)
-        def pop(self) :
+        def deque(self) :
             return self.array.pop()
         def rev(self) :
             return self.array.reverse()

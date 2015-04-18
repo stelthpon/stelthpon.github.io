@@ -23,9 +23,9 @@ while True :
 
     if a == 'push' :
         b = input('please number input >')
-        q.push(b)
+        q.enque(b)
 
     if a == 'pop' :
         q.rev()
-        print(q.pop())
+        print(q.deque())
         q.rev()
