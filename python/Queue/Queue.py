@@ -12,10 +12,17 @@
 #coding: UTF-8
 
 class Queue :
-        array = []
+        def __init__(self) :
+                self.__array = []
         def enque(self, e) :
-            self.array.append(e)
+                self.__array.append(e)
         def deque(self) :
-            return self.array.pop()
-        def rev(self) :
-            return self.array.reverse()
+            return self.__array.pop()
+        def head(self) :
+                return self.__array[0]
+        def consoleOut(self) :
+                print("[tail] > ", end="")
+                for e in self.__array :
+                        print(e, "", end="")
+                print("< [head]", "", end="")
+                print("(", len(self.__array), "elements", ")")

@@ -11,9 +11,9 @@
 
 #coding: UTF-8
 
-from Queue2 import Queue2
+from Queue import Queue
 
-q = Queue2()
+q = Queue
 
 while True :
     str([])
@@ -21,7 +21,7 @@ while True :
     a = input('%s please input >' % q.array)
 
     if a == 'end' :
-        print("終了")
+        print("end")
         break
 
     if a == 'push' :
@@ -32,4 +32,4 @@ while True :
         try:
             print(q.deque())
         except:
-            print("空のリストです")
+            print("empty")

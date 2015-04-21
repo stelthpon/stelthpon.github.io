@@ -14,17 +14,28 @@
 from Queue import Queue
 
 q = Queue()
-q.enque(0)
-q.enque(1)
-q.enque(2)
-q.enque(3)
-q.rev()
-print(q.deque())
-print(q.deque())
-q.rev()
-q.enque(10)
-q.rev()
-print(q.deque())
-print(q.deque())
-print(q.deque())
-q.rev()
+
+while True :
+    a = input('please input >' )
+
+    if a == 'end' :
+        print("end")
+        break
+
+    if a == 'push' :
+        b = input('please number input >')
+        q.enque(b)
+
+    if a == 'pop' :
+        try:
+            print(q.deque())
+        except:
+            print("empty")
+
+    if a == 'head' :
+        try:
+            print(q.head())
+        except:
+            print("empty")
+
+    q.consoleOut()
