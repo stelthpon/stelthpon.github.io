@@ -17,9 +17,11 @@ class Queue :
         def enque(self, e) :
                 self.__array.append(e)
         def deque(self) :
-            return self.__array.pop()
+                return self.__array.pop(0)
         def head(self) :
                 return self.__array[0]
+        def size(self) :
+                return len(self.__array)
         def consoleOut(self) :
                 print("[tail] > ", end="")
                 for e in self.__array :

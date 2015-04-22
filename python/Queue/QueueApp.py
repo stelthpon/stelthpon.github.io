@@ -38,4 +38,7 @@ while True :
         except:
             print("empty")
 
+    if a == 'size' :
+        print(q.size())
+
     q.consoleOut()
